@@ -4,7 +4,7 @@
         <img id="stark" src="{{asset('images/stark.png')}}" alt="">
       </a>
       @auth
-          <a href="{{ url('/home') }}">User</a>
+          <a href="{{ url('/home') }}">User, logged</a>
       @else
       <div class="links">
         <a href="{{ route('login') }}">Login</a>

@@ -15,12 +15,15 @@
               {{$emp -> name}}
               {{$emp -> lastname}}
             </a>
-            <a href="{{ route('emp-edit', $emp -> id)}}">
-              E
-            </a>
-            <a href="{{ route('emp-delete', $emp -> id)}}">
-              <i class="fas fa-times-circle"></i>
-            </a>
+            <i class="fas fa-chevron-down"></i>
+            <div class="drop">
+              <a href="{{ route('emp-edit', $emp -> id)}}">
+                edit
+              </a>
+              <a href="{{ route('emp-delete', $emp -> id)}}">
+                delete
+              </a>
+            </div>
          </li>
         @endforeach
     </ul>
