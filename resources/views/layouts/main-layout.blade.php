@@ -8,10 +8,11 @@
     <title>Stark Industries</title>
   </head>
   <body>
-    <div class="container">
+    <div class="">
       @include('partials.header')
       @yield('content')
       @include('partials.footer')
     </div>
+    <script type="text/javascript" src="{{asset('/js/script.js')}}"></script>
   </body>
 </html>

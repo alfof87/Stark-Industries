@@ -8,6 +8,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{asset('/css/app.css')}}">
 
         <!-- Styles -->
         <style>
@@ -64,25 +65,23 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">User</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
-                </div>
-
-            <div class="content">
-                <div class="title m-b-md">
-                  <img src="{{ asset('images/logo.png') }}" alt="">
-                </div>
-
-                <div class="links">
+        <div class="">
+          @include('partials.header')
+            <div class="content central-content">
+                <div class="links content-list">
+                    <br>
                     <a href="http://localhost:8000/employees">Employees</a>
+                    <a href="">Example</a>
+                    <a href="">Example</a>
+                    <a href="">Example</a>
+                    <a href="">Example</a>
+                    <a href="">Example</a>
+                </div>
+                <div class="title m-b-md content-img">
+                  <img src="{{ asset('images/logo.png') }}" alt="">
                 </div>
             </div>
         </div>
+        @include('partials.footer')
     </body>
 </html>
