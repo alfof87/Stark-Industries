@@ -71,7 +71,7 @@
                 <div class="links content-list">
                     <br>
                     <a href="http://localhost:8000/employees">Employees</a>
-                    <a href="">Example</a>
+                    <a href="http://localhost:8000/graphic">Graphic</a>
                     <a href="">Example</a>
                     <a href="">Example</a>
                     <a href="">Example</a>

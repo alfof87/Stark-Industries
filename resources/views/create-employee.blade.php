@@ -4,7 +4,9 @@
 
 </form> --}}
 <div class="form-edit">
-  <form action="{{route('emp-store')}}" method="post">
+  <a class="empList" href="http://localhost:8000/employees">Employees List</a>
+
+  <form id="form-dist" action="{{route('emp-store')}}" method="post">
     @csrf
     @method('POST')
     <label for="name">First name:</label><br>

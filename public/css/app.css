@@ -93,6 +93,10 @@ header{
   border-bottom: 1px solid grey;
   margin: 5px;
 }
+.content-list a:hover{
+  background-color: grey;
+  color: black;
+}
 .content-img{
   width: 400px;
   margin-right: 35%;
@@ -117,6 +121,7 @@ header{
 #emp-name-lastname{
   width: 300px;
   border: 1px solid grey;
+  border-top-right-radius: 25px;
 }
 .emp-data-list{
   display: flex;
@@ -135,14 +140,40 @@ header{
   margin-left: 15px;
 }
 #edit{
+  width: 80px;
+  background-color: #3490dc;
+  color: white;
+  border-style: none;
+  border-top-left-radius: 25px;
+}
+#delete{
+  width: 80px;
+  background-color: red;
+  color: white;
+  border-style: none;
+}
+#update{
+  width: 80px;
   background-color: #3490dc;
   color: white;
   border-style: none;
 }
-#delete{
-  background-color: red;
-  color: white;
-  border-style: none;
+.log{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+}
+#myChart{
+  width: 800px;
 }
 .drop{
   width: 100px;
@@ -169,7 +200,7 @@ header{
  display: none;
 } */
 .empList{
-  margin-right: 100px;
+  margin-right: 200px;
 }
 .empData{
   padding-right: 350px;
@@ -177,6 +208,10 @@ header{
 .empData p{
  margin: 0;
 }
+#form-dist, #form-dist-edit{
+  margin-right: 350px;
+}
+
 /* .empData ul li{
   display: flex;
   justify-content: center;

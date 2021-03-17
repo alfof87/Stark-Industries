@@ -37,4 +37,7 @@ class EmployeeController extends Controller
       $employeeData -> update($data);
       return redirect() -> route('index');
     }
+    public function graphic(){
+      return view('graphic');
+    }
 }

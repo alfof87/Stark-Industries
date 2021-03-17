@@ -2,7 +2,7 @@
 @section('content')
   <div class="form-edit">
     <a class="empList" href="http://localhost:8000/employees">Employees List</a>
-    <form action="{{route('emp-update', $employeeData -> id )}}" method="post">
+    <form id="form-dist-edit" action="{{route('emp-update', $employeeData -> id )}}" method="post">
       @csrf
       @method('POST')
       <div class="form-group">
@@ -22,7 +22,7 @@
         <input type="email" name="email" value="{{$employeeData -> email}}"><br><br>
       </div>
 
-      <button type="submit" name="button">update</button>
+      <button id="update" type="submit" name="button">update</button>
     </form>
 
   </div>
