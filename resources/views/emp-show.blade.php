@@ -1,42 +1,50 @@
 @extends('layouts.main-layout')
 @section('content')
+
+<div class="form-edit">
+  <a class="empList" href="http://localhost:8000/employees">Employees List</a>
+
   <h2>
     {{$employeeData -> name}}
     {{$employeeData -> lastname}}
   </h2>
-  <ul>
+  <ul class="empData">
     <li>
       <strong>
-        <h3>
+        <p>
           Date of birth:
-        </h3>
+        </p>
       </strong>
-      {{$employeeData -> date}}
+      <span>{{$employeeData -> date}}</span>
     </li>
+    <br>
     <li>
       <strong>
-        <h3>
+        <p>
           Email:
-        </h3>
+        </p>
       </strong>
-      {{$employeeData -> email}}
+      <span>{{$employeeData -> email}}</span>
     </li>
+    <br>
     <li>
       <strong>
-        <h3>
+        <p>
           Employee ID:
-        </h3>
+        </p>
       </strong>
-      {{$employeeData -> id}}
+      <span>{{$employeeData -> id}}</span>
     </li>
+    <br>
     <li>
       <strong>
-        <h3>
+        <p>
           Created at:
-        </h3>
+        </p>
       </strong>
-      {{$employeeData -> created_at}}
+      <span>{{$employeeData -> created_at}}</span>
     </li>
   </ul>
+</div>
 
 @endsection

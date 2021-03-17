@@ -1,7 +1,7 @@
 @extends('layouts.main-layout')
 @section('content')
   <div class="form-edit">
-    <a class="float-left" href="http://localhost:8000/employees">Employees List</a>
+    <a class="empList" href="http://localhost:8000/employees">Employees List</a>
     <form action="{{route('emp-update', $employeeData -> id )}}" method="post">
       @csrf
       @method('POST')

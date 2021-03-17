@@ -11,20 +11,23 @@
     <ul>
         @foreach ($employee as $emp)
           <li>
-            <a href="{{route('emp-show', $emp -> id)}}">
-              {{$emp -> name}}
-              {{$emp -> lastname}}
-            </a>
-            <i class="fas fa-chevron-down"></i>
-            <div class="drop">
-              <a href="{{ route('emp-edit', $emp -> id)}}">
-                edit
+            <div class="emp-data-list">
+              <a id="emp-name-lastname" href="{{route('emp-show', $emp -> id)}}">
+                {{$emp -> name}}
+                {{$emp -> lastname}}
               </a>
-              <a href="{{ route('emp-delete', $emp -> id)}}">
-                delete
-              </a>
+              <div class="btn-emp">
+                <a href="{{ route('emp-edit', $emp -> id)}}">
+                  <button id="edit" type="button" name="button">edit</button>
+                </a>
+                <a href="{{ route('emp-delete', $emp -> id)}}">
+                  <button id="delete" type="button" name="button">delete</button>
+                </a>
+              </div>
             </div>
          </li>
+
+
         @endforeach
     </ul>
   </div>
